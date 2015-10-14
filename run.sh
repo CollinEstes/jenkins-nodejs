@@ -1,0 +1,1 @@
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):/usr/bin/docker -v /usr/lib/x86_64-linux-gnu/libapparmor.so.1.1.0:/usr/lib/x86_64-linux-gnu/libapparmor.so.1 -v /home/jenkins/jenkins_home:/var/jenkins_home -p 8080:8080 mdt_jenkins
